@@ -33,12 +33,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.roomdb.R
 import com.example.roomdb.TodoViewModel
+import kotlinx.coroutines.coroutineScope
 import java.text.SimpleDateFormat
 import java.util.Locale
 
 @Composable
 fun TodoPage(viewModel: TodoViewModel) {
-
     val todoList by viewModel.todoList.observeAsState()
 
     var task by remember {

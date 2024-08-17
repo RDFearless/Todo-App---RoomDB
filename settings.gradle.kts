@@ -1,4 +1,7 @@
 pluginManagement {
+    plugins{
+        kotlin("kapt") version "2.0.10"
+    }
     repositories {
         google {
             content {
